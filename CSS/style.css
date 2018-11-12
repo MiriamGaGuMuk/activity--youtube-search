@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    /*does not affect the container but the child*/
+    width: 653px;
+    height: 32px;
+    margin: 0 auto;
+    /*to align to the center if we use justify-content won't work cause is affected the child not the content*/
+}
+
+.container input {
+    flex: 1;
+    /*make its own calc till the next element all depends on the widht given in this ex the total width is 
+  653 so the buttom is 65, so is 635 - 65 of the button*/
+    font-size: 14px;
+    padding-left: 8px;
+    border: 1px solid red;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.container button {
+    width: 65px;
+    background-color: #EAEAEA;
+    border: 1px solid red;
+    border-left: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
