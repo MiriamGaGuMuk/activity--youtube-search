@@ -23,7 +23,6 @@ body {
   653 so the buttom is 65, so is 635 - 65 of the button*/
     font-size: 14px;
     padding-left: 8px;
-    border: 1px solid red;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
 }
@@ -31,7 +30,6 @@ body {
 .container button {
     width: 65px;
     background-color: #EAEAEA;
-    border: 1px solid red;
     border-left: none;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
